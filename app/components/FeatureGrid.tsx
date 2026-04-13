@@ -43,9 +43,9 @@ const features = [
   },
   {
     icon: <NoAdsIcon />,
-    title: "No Ads, No Subscriptions",
+    title: "No Ads. No Tracking.",
     description:
-      "One-time purchase. No recurring fees, no ads, no tracking. A camera tool that works.",
+      "Zero analytics, zero data collection. Your photos stay on your devices. A camera tool that respects your privacy.",
   },
 ];
 

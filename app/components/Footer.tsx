@@ -22,31 +22,31 @@ export default function Footer() {
 
           {/* Links */}
           <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-tl-muted">
+            <a
+              href="https://apps.apple.com/app/id6762047518"
+              className="hover:text-tl-text transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              App Store
+            </a>
+            <a
+              href="mailto:support@twinlensapp.com"
+              className="hover:text-tl-text transition-colors"
+            >
+              Support
+            </a>
             <Link href="/privacy" className="hover:text-tl-text transition-colors">
               Privacy Policy
             </Link>
             <Link href="/terms" className="hover:text-tl-text transition-colors">
               Terms of Use
             </Link>
-            <Link href="/support" className="hover:text-tl-text transition-colors">
-              Support
-            </Link>
-            <a
-              href="https://github.com/leofrht-jpg/TwinLens-App"
-              className="hover:text-tl-text transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
           </nav>
 
-          {/* Right side */}
-          <div className="flex flex-col items-center md:items-end gap-1 text-xs text-tl-muted">
-            <span>&copy; {new Date().getFullYear()} Leo Frht</span>
-            <span className="text-tl-hint">
-              Zero data collected. No analytics. No tracking.
-            </span>
+          {/* Copyright */}
+          <div className="text-xs text-tl-muted">
+            &copy; {new Date().getFullYear()} Leo Frht
           </div>
         </div>
       </div>

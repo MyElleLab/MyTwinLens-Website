@@ -1,38 +1,7 @@
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16 overflow-hidden">
-      {/* Background texture — faint grid */}
-      <div
-        className="absolute inset-0 opacity-[0.03] pointer-events-none"
-        style={{
-          backgroundImage: `repeating-linear-gradient(
-            0deg,
-            transparent,
-            transparent 18px,
-            #F59E0B 18px,
-            #F59E0B 19px
-          ), repeating-linear-gradient(
-            90deg,
-            transparent,
-            transparent 18px,
-            #F59E0B 18px,
-            #F59E0B 19px
-          )`,
-        }}
-        aria-hidden="true"
-      />
-
-      {/* Radial glow behind content */}
-      <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse at center, rgba(245,158,11,0.08) 0%, transparent 70%)",
-        }}
-        aria-hidden="true"
-      />
-
-      <div className="relative z-10 max-w-4xl mx-auto text-center space-y-8">
+    <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16">
+      <div className="max-w-4xl mx-auto text-center space-y-8">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-tl-text leading-[1.1]">
           <span className="block">You. In the shot.</span>
           <span
@@ -58,7 +27,7 @@ export default function HeroSection() {
         {/* CTA */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="https://apps.apple.com/app/twinlens-remote-lens-mirror/id6743597614"
+            href="https://apps.apple.com/app/id6762047518"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-tl-amber text-tl-bg font-semibold text-sm hover:bg-[#D97706] transition-colors"
             aria-label="Download TwinLens on the App Store"
           >

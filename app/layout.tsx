@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import GridBackground from "./components/GridBackground";
-
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -63,10 +61,7 @@ export default function RootLayout({
         <link rel="icon" href="/app-icon.jpeg" type="image/jpeg" />
       </head>
       <body className="bg-tl-bg text-tl-text antialiased">
-        <GridBackground />
-        <div className="relative z-10">
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );

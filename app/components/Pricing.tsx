@@ -1,46 +1,34 @@
-const tiers = [
+const plans = [
   {
-    name: "Free",
-    price: "$0",
-    period: "forever",
-    description: "Everything you need to start shooting.",
+    name: "Monthly",
+    price: "$1.99",
+    period: "month",
+    description: "Full access with a 7-day free trial.",
     features: [
-      "Core pairing",
-      "Live viewfinder",
-      "Single-tap shutter",
-      "No time limits",
-      "No ads",
+      "Live HD viewfinder",
+      "Remote shutter",
+      "Full-quality photo capture",
+      "Photo preview on Mirror",
+      "Shutter timer",
+      "Save to Lens, Mirror, or both",
     ],
     highlight: false,
   },
   {
-    name: "Pro",
-    price: "$9.99",
-    period: "lifetime",
-    description: "For photographers who want more.",
+    name: "Yearly",
+    price: "$14.99",
+    period: "year",
+    description: "Everything in Monthly. Save 37%.",
     features: [
-      "4K stream",
-      "Burst mode",
-      "Composition grid",
-      "Extended range",
-      "Session memory",
+      "Live HD viewfinder",
+      "Remote shutter",
+      "Full-quality photo capture",
+      "Photo preview on Mirror",
+      "Shutter timer",
+      "Save to Lens, Mirror, or both",
     ],
     highlight: true,
-    badge: "BEST VALUE",
-  },
-  {
-    name: "Creator Bundle",
-    price: "$14.99",
-    period: "lifetime",
-    description: "The full toolkit for content creators.",
-    features: [
-      "Everything in Pro",
-      "Multi-angle capture",
-      "Timer sequences",
-      "Future AI composition",
-      "Priority features",
-    ],
-    highlight: false,
+    badge: "SAVE 37%",
   },
 ];
 
@@ -50,54 +38,84 @@ export default function Pricing() {
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-16 space-y-3">
           <h2 className="text-3xl md:text-4xl font-bold text-tl-text">
-            One price. Yours forever.
+            Simple pricing
           </h2>
           <p className="text-tl-muted max-w-xl mx-auto">
-            No subscriptions. No recurring fees. Pay once, use forever.
+            Start with a 7-day free trial. Cancel anytime.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {tiers.map((tier, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          {plans.map((plan, i) => (
             <div
               key={i}
               className={`relative p-6 rounded-xl border ${
-                tier.highlight
+                plan.highlight
                   ? "border-tl-amber bg-tl-surface shadow-[0_0_40px_rgba(245,158,11,0.1)]"
                   : "border-tl-border bg-tl-surface"
               } flex flex-col`}
             >
-              {tier.badge && (
+              {plan.badge && (
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 text-[10px] font-bold bg-tl-amber text-tl-bg rounded-full mono-heading tracking-widest">
-                  {tier.badge}
+                  {plan.badge}
                 </span>
               )}
 
               <div className="mb-6 space-y-2">
                 <h3 className="mono-heading text-sm text-tl-muted tracking-widest">
-                  {tier.name}
+                  {plan.name}
                 </h3>
                 <div className="flex items-baseline gap-1">
                   <span className="text-4xl font-bold text-tl-text">
-                    {tier.price}
+                    {plan.price}
                   </span>
-                  <span className="text-sm text-tl-muted">/{tier.period}</span>
+                  <span className="text-sm text-tl-muted">/{plan.period}</span>
                 </div>
-                <p className="text-sm text-tl-muted">{tier.description}</p>
+                <p className="text-sm text-tl-muted">{plan.description}</p>
               </div>
 
               <ul className="space-y-3 flex-1">
-                {tier.features.map((feature, j) => (
+                {plan.features.map((feature, j) => (
                   <li key={j} className="flex items-start gap-2 text-sm">
                     <span className="mt-1 w-1.5 h-1.5 rounded-full bg-tl-amber flex-shrink-0" />
                     <span className="text-tl-muted">{feature}</span>
                   </li>
                 ))}
               </ul>
+
+              <a
+                href="https://apps.apple.com/app/id6762047518"
+                className={`mt-6 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-colors ${
+                  plan.highlight
+                    ? "bg-tl-amber text-tl-bg hover:bg-[#D97706]"
+                    : "border border-tl-border text-tl-text hover:border-tl-amber hover:text-tl-amber"
+                }`}
+              >
+                <AppleIcon />
+                Download on the App Store
+              </a>
             </div>
           ))}
         </div>
+
+        <p className="text-center text-xs text-tl-muted mt-8">
+          Payment is charged to your Apple ID. Subscriptions auto-renew unless
+          cancelled at least 24 hours before the end of the current period.
+        </p>
       </div>
     </section>
+  );
+}
+
+function AppleIcon() {
+  return (
+    <svg
+      viewBox="0 0 384 512"
+      fill="currentColor"
+      className="w-4 h-4"
+      aria-hidden="true"
+    >
+      <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+    </svg>
   );
 }
