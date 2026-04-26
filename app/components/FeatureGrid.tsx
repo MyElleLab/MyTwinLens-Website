@@ -30,12 +30,6 @@ const features = [
       "See the result on your Mirror instantly after every shot. Know whether to reshoot or move on.",
   },
   {
-    icon: <TimerIcon />,
-    title: "Shutter Timer",
-    description:
-      "3, 5, 7, or 10 second countdown, set from the Mirror. Shows on both devices so you know exactly when to pose.",
-  },
-  {
     icon: <SaveIcon />,
     title: "Save Anywhere",
     description:
@@ -142,16 +136,6 @@ function PreviewIcon() {
     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
       <path d="M2 14s4-8 12-8 12 8 12 8-4 8-12 8-12-8-12-8z" stroke="#F59E0B" strokeWidth="1.5" />
       <circle cx="14" cy="14" r="3" stroke="#F59E0B" strokeWidth="1.5" />
-    </svg>
-  );
-}
-
-function TimerIcon() {
-  return (
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-      <circle cx="14" cy="15" r="10" stroke="#F59E0B" strokeWidth="1.5" />
-      <path d="M14 9v6l4 2" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M11 3h6" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
     </svg>
   );
 }
