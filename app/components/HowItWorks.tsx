@@ -9,13 +9,13 @@ const steps = [
     number: "02",
     title: "Open Your Mirror",
     description:
-      "Open TwinLens on your second iPhone. Connect in seconds. No internet needed.",
+      "Open TwinLens on your second iPhone. The two phones pair directly over Wi-Fi and Bluetooth — no internet needed.",
   },
   {
     number: "03",
-    title: "See. Frame. Shoot.",
+    title: "Control Everything From Your Mirror",
     description:
-      "See the live viewfinder on your Mirror. Frame yourself perfectly. Tap the shutter from any distance.",
+      "Zoom, flip the camera, set a timer, and fire the shutter — all from the phone in your hand. The Lens just listens.",
   },
 ];
 

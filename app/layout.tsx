@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "TwinLens — Remote Lens & Mirror for iOS",
   description:
-    "Your second iPhone becomes a live viewfinder and remote shutter. No internet. No tripod timer. No asking strangers.",
+    "Your second iPhone becomes a live viewfinder and remote shutter. No internet needed to shoot — your iPhones connect directly over Wi-Fi and Bluetooth.",
   keywords: [
     "remote lens",
     "viewfinder",

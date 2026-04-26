@@ -3,13 +3,19 @@ const features = [
     icon: <ViewfinderIcon />,
     title: "Live HD Viewfinder",
     description:
-      "H.264 streaming at 30 FPS with under 200ms latency. See exactly what the Lens sees, in real time.",
+      "See the feed and run the camera, all from the Mirror. H.264 streaming at 30 FPS with under 200ms latency.",
   },
   {
     icon: <ShutterIcon />,
     title: "Remote Shutter",
     description:
-      "One tap on the Mirror fires the camera from any distance. No delay, no guessing.",
+      "Every control lives on the Mirror — zoom, flip camera, timer, shutter. The Lens stays hands-free.",
+  },
+  {
+    icon: <ZoomFlipIcon />,
+    title: "Remote Zoom & Flip",
+    description:
+      "Control zoom and switch cameras on the Lens from your Mirror. No need to walk back.",
   },
   {
     icon: <QualityIcon />,
@@ -27,7 +33,7 @@ const features = [
     icon: <TimerIcon />,
     title: "Shutter Timer",
     description:
-      "3, 5, 7, or 10 second countdown. Shows on both devices so you know exactly when to pose.",
+      "3, 5, 7, or 10 second countdown, set from the Mirror. Shows on both devices so you know exactly when to pose.",
   },
   {
     icon: <SaveIcon />,
@@ -37,9 +43,9 @@ const features = [
   },
   {
     icon: <WifiOffIcon />,
-    title: "Zero Internet",
+    title: "No Internet to Shoot",
     description:
-      "Direct Wi-Fi + Bluetooth connection. No server, no cloud, no account. Your photos never leave your devices.",
+      "Your iPhones connect directly over Wi-Fi and Bluetooth. No server, no cloud, no account. Photos never leave your devices.",
   },
   {
     icon: <NoAdsIcon />,
@@ -105,6 +111,19 @@ function ShutterIcon() {
     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
       <circle cx="14" cy="14" r="11" stroke="#F59E0B" strokeWidth="1.5" />
       <circle cx="14" cy="14" r="8" stroke="#F59E0B" strokeWidth="2" />
+    </svg>
+  );
+}
+
+function ZoomFlipIcon() {
+  return (
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <circle cx="12" cy="12" r="7" stroke="#F59E0B" strokeWidth="1.5" />
+      <line x1="9" y1="12" x2="15" y2="12" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="12" y1="9" x2="12" y2="15" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="17" y1="17" x2="22" y2="22" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M19 4l3 3-3 3" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M22 7h-5a3 3 0 0 0-3 3" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }

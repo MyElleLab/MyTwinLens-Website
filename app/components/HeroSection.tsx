@@ -20,7 +20,7 @@ export default function HeroSection() {
             Your second iPhone becomes a live viewfinder and remote shutter.
           </p>
           <p className="text-tl-text font-bold">
-            No internet. No tripod timer. No asking strangers.
+            No internet needed to shoot. Your iPhones connect directly over Wi-Fi and Bluetooth.
           </p>
         </div>
 
