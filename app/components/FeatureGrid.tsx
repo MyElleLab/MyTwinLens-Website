@@ -9,13 +9,25 @@ const features = [
     icon: <ShutterIcon />,
     title: "Remote Shutter",
     description:
-      "Every control lives on the Mirror — zoom, flip camera, timer, shutter. The Lens stays hands-free.",
+      "Every camera control lives on the Mirror — shutter, zoom, brightness, flip, timer, grid. The Lens stays hands-free.",
   },
   {
     icon: <ZoomFlipIcon />,
     title: "Remote Zoom & Flip",
     description:
       "Control zoom and switch cameras on the Lens from your Mirror. No need to walk back.",
+  },
+  {
+    icon: <BrightnessIcon />,
+    title: "Remote Zoom & Brightness",
+    description:
+      "Control zoom and exposure from your Mirror. Slide to adjust — the Lens responds instantly.",
+  },
+  {
+    icon: <GridIcon />,
+    title: "Composition Grid",
+    description:
+      "Toggle a rule-of-thirds overlay to frame your shots like a pro.",
   },
   {
     icon: <QualityIcon />,
@@ -118,6 +130,34 @@ function ZoomFlipIcon() {
       <line x1="17" y1="17" x2="22" y2="22" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
       <path d="M19 4l3 3-3 3" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M22 7h-5a3 3 0 0 0-3 3" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function BrightnessIcon() {
+  return (
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <circle cx="14" cy="14" r="4.5" stroke="#F59E0B" strokeWidth="1.5" />
+      <line x1="14" y1="3" x2="14" y2="6" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="14" y1="22" x2="14" y2="25" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="3" y1="14" x2="6" y2="14" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="22" y1="14" x2="25" y2="14" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="6.2" y1="6.2" x2="8.3" y2="8.3" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="19.7" y1="19.7" x2="21.8" y2="21.8" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="6.2" y1="21.8" x2="8.3" y2="19.7" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="19.7" y1="8.3" x2="21.8" y2="6.2" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function GridIcon() {
+  return (
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <rect x="4" y="4" width="20" height="20" rx="2" stroke="#F59E0B" strokeWidth="1.5" />
+      <line x1="10.67" y1="4" x2="10.67" y2="24" stroke="#F59E0B" strokeWidth="1.5" />
+      <line x1="17.33" y1="4" x2="17.33" y2="24" stroke="#F59E0B" strokeWidth="1.5" />
+      <line x1="4" y1="10.67" x2="24" y2="10.67" stroke="#F59E0B" strokeWidth="1.5" />
+      <line x1="4" y1="17.33" x2="24" y2="17.33" stroke="#F59E0B" strokeWidth="1.5" />
     </svg>
   );
 }
