@@ -1,7 +1,7 @@
 const plans = [
   {
     name: "Monthly",
-    price: "$1.99",
+    price: "$4.99",
     period: "month",
     description: "Full access with a 7-day free trial.",
     features: [
@@ -16,9 +16,9 @@ const plans = [
   },
   {
     name: "Yearly",
-    price: "$14.99",
+    price: "$39.99",
     period: "year",
-    description: "Everything in Monthly. Save 37%.",
+    description: "Everything in Monthly. Save 33%.",
     features: [
       "Live HD viewfinder",
       "Remote shutter",
@@ -28,7 +28,7 @@ const plans = [
       "Save to Lens, Mirror, or both",
     ],
     highlight: true,
-    badge: "SAVE 37%",
+    badge: "SAVE 33%",
   },
 ];
 
