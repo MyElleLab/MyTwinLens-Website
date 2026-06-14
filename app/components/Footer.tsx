@@ -30,12 +30,9 @@ export default function Footer() {
             >
               App Store
             </a>
-            <a
-              href="mailto:support@twinlensapp.com"
-              className="hover:text-tl-text transition-colors"
-            >
+            <Link href="/support" className="hover:text-tl-text transition-colors">
               Support
-            </a>
+            </Link>
             <Link href="/privacy" className="hover:text-tl-text transition-colors">
               Privacy Policy
             </Link>
