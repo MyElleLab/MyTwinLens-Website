@@ -46,7 +46,7 @@ export default function HeroSection() {
         <div className="mt-12 w-full max-w-3xl mx-auto">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/hero.jpeg"
+            src="/Hero_v2.png"
             alt="TwinLens — one iPhone as the Lens, one as the Mirror, capturing the same shot"
             className="mx-auto w-full h-auto rounded-2xl border border-tl-border shadow-[0_8px_40px_rgba(245,158,11,0.08)]"
           />
