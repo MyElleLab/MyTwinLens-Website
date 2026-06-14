@@ -4,7 +4,6 @@ import StatsBar from "./components/StatsBar";
 import HowItWorks from "./components/HowItWorks";
 import FeatureGrid from "./components/FeatureGrid";
 import BuiltFor from "./components/BuiltFor";
-import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
         <HowItWorks />
         <FeatureGrid />
         <BuiltFor />
-        <Pricing />
       </main>
       <Footer />
     </>

@@ -9,55 +9,31 @@ const features = [
     icon: <ShutterIcon />,
     title: "Remote Shutter",
     description:
-      "Every camera control lives on the Mirror — shutter, zoom, brightness, flip, timer, grid. The Lens stays hands-free.",
+      "Fire the camera from across the room or across the street. One tap on the Mirror triggers the Lens instantly.",
   },
   {
     icon: <ZoomFlipIcon />,
-    title: "Remote Zoom & Flip",
+    title: "Remote Controls",
     description:
-      "Control zoom and switch cameras on the Lens from your Mirror. No need to walk back.",
-  },
-  {
-    icon: <BrightnessIcon />,
-    title: "Remote Zoom & Brightness",
-    description:
-      "Control zoom and exposure from your Mirror. Slide to adjust — the Lens responds instantly.",
-  },
-  {
-    icon: <GridIcon />,
-    title: "Composition Grid",
-    description:
-      "Toggle a rule-of-thirds overlay to frame your shots like a pro.",
+      "Zoom, brightness, flip, timer, and a rule-of-thirds grid. Every control lives on the Mirror, so the Lens stays hands-free.",
   },
   {
     icon: <QualityIcon />,
     title: "Full-Quality Photos",
     description:
-      "Full sensor HEIF capture at native resolution. The stream is for framing — your photos are full quality.",
-  },
-  {
-    icon: <PreviewIcon />,
-    title: "Photo Preview",
-    description:
-      "See the result on your Mirror instantly after every shot. Know whether to reshoot or move on.",
+      "Full sensor HEIF capture at native resolution. The stream is only for framing; your saved photos are full quality.",
   },
   {
     icon: <SaveIcon />,
-    title: "Save Anywhere",
+    title: "Review & Save",
     description:
-      "Choose where photos land: Lens only, Mirror only, or both devices. Your shots, your workflow.",
+      "See each shot on your Mirror the moment it's taken, then save to the Lens, the Mirror, or both devices.",
   },
   {
     icon: <WifiOffIcon />,
-    title: "No Internet to Shoot",
+    title: "Private by Design",
     description:
-      "Your iPhones connect directly over Wi-Fi and Bluetooth. No server, no cloud, no account. Photos never leave your devices.",
-  },
-  {
-    icon: <NoAdsIcon />,
-    title: "No Ads. No Tracking.",
-    description:
-      "Zero analytics, zero data collection. Your photos stay on your devices. A camera tool that respects your privacy.",
+      "No internet needed to shoot. No ads, no tracking, no account. Your photos never leave your devices.",
   },
 ];
 
@@ -74,7 +50,7 @@ export default function FeatureGrid() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {features.map((feature, i) => (
             <FeatureCard key={i} {...feature} />
           ))}
@@ -134,48 +110,11 @@ function ZoomFlipIcon() {
   );
 }
 
-function BrightnessIcon() {
-  return (
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-      <circle cx="14" cy="14" r="4.5" stroke="#F59E0B" strokeWidth="1.5" />
-      <line x1="14" y1="3" x2="14" y2="6" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="14" y1="22" x2="14" y2="25" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="3" y1="14" x2="6" y2="14" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="22" y1="14" x2="25" y2="14" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="6.2" y1="6.2" x2="8.3" y2="8.3" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="19.7" y1="19.7" x2="21.8" y2="21.8" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="6.2" y1="21.8" x2="8.3" y2="19.7" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="19.7" y1="8.3" x2="21.8" y2="6.2" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  );
-}
-
-function GridIcon() {
-  return (
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-      <rect x="4" y="4" width="20" height="20" rx="2" stroke="#F59E0B" strokeWidth="1.5" />
-      <line x1="10.67" y1="4" x2="10.67" y2="24" stroke="#F59E0B" strokeWidth="1.5" />
-      <line x1="17.33" y1="4" x2="17.33" y2="24" stroke="#F59E0B" strokeWidth="1.5" />
-      <line x1="4" y1="10.67" x2="24" y2="10.67" stroke="#F59E0B" strokeWidth="1.5" />
-      <line x1="4" y1="17.33" x2="24" y2="17.33" stroke="#F59E0B" strokeWidth="1.5" />
-    </svg>
-  );
-}
-
 function QualityIcon() {
   return (
     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
       <rect x="3" y="6" width="22" height="16" rx="2" stroke="#F59E0B" strokeWidth="1.5" />
       <path d="M8 18l4-5 3 3 5-6" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
-
-function PreviewIcon() {
-  return (
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-      <path d="M2 14s4-8 12-8 12 8 12 8-4 8-12 8-12-8-12-8z" stroke="#F59E0B" strokeWidth="1.5" />
-      <circle cx="14" cy="14" r="3" stroke="#F59E0B" strokeWidth="1.5" />
     </svg>
   );
 }
@@ -198,15 +137,6 @@ function WifiOffIcon() {
       <path d="M11 17a6 6 0 0 1 6 0" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
       <circle cx="14" cy="21" r="1.5" fill="#F59E0B" />
       <line x1="4" y1="4" x2="24" y2="24" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  );
-}
-
-function NoAdsIcon() {
-  return (
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-      <circle cx="14" cy="14" r="11" stroke="#F59E0B" strokeWidth="1.5" />
-      <path d="M9 14l3.5 3.5L19 10" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }

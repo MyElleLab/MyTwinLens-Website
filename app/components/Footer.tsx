@@ -46,7 +46,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="text-xs text-tl-muted">
-            &copy; {new Date().getFullYear()} Leo Frht
+            &copy; {new Date().getFullYear()} TwinLens
           </div>
         </div>
       </div>
