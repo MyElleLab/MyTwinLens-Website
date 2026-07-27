@@ -20,13 +20,13 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2 group">
           <Image
             src="/app-icon.jpeg"
-            alt="TwinLens icon"
+            alt="MyTwinLens icon"
             width={32}
             height={32}
             className="rounded-lg"
           />
           <span className="font-semibold text-tl-text group-hover:text-tl-amber transition-colors mono-heading text-sm tracking-widest">
-            TWINLENS
+            MYTWINLENS
           </span>
         </Link>
 

@@ -8,7 +8,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "TwinLens — Remote Lens & Mirror for iOS",
+  metadataBase: new URL("https://mytwinlens.myellelab.com"),
+  alternates: {
+    canonical: "/",
+  },
+  title: "MyTwinLens — Remote Lens & Mirror for iOS",
   description:
     "Your second iPhone becomes a live viewfinder and remote shutter. No internet needed to shoot — your iPhones connect directly over Wi-Fi and Bluetooth.",
   keywords: [
@@ -21,24 +25,24 @@ export const metadata: Metadata = {
     "iOS",
   ],
   openGraph: {
-    title: "TwinLens — Remote Lens & Mirror for iOS",
+    title: "MyTwinLens — Remote Lens & Mirror for iOS",
     description:
       "You. In the shot. Finally. Live viewfinder + remote shutter from your second iPhone.",
-    url: "https://github.com/leofrht-jpg/TwinLens-App",
-    siteName: "TwinLens",
+    url: "https://mytwinlens.myellelab.com",
+    siteName: "MyTwinLens",
     type: "website",
     images: [
       {
         url: "/app-icon.jpeg",
         width: 1024,
         height: 1024,
-        alt: "TwinLens app icon",
+        alt: "MyTwinLens app icon",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "TwinLens — Remote Lens & Mirror for iOS",
+    title: "MyTwinLens — Remote Lens & Mirror for iOS",
     description:
       "You. In the shot. Finally. Live viewfinder + remote shutter from your second iPhone.",
   },

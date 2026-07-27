@@ -10,13 +10,13 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <Image
               src="/app-icon.jpeg"
-              alt="TwinLens icon"
+              alt="MyTwinLens icon"
               width={24}
               height={24}
               className="rounded-md"
             />
             <span className="font-semibold text-tl-text mono-heading text-sm tracking-widest">
-              TWINLENS
+              MYTWINLENS
             </span>
           </div>
 
@@ -43,7 +43,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="text-xs text-tl-muted">
-            &copy; {new Date().getFullYear()} TwinLens
+            &copy; {new Date().getFullYear()} MyElleLab
           </div>
         </div>
       </div>

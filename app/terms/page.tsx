@@ -4,8 +4,8 @@ import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Use — TwinLens",
-  description: "Terms of Use for the TwinLens iOS app.",
+  title: "Terms of Use — MyTwinLens",
+  description: "Terms of Use for the MyTwinLens iOS app.",
 };
 
 export default function TermsPage() {
@@ -28,14 +28,15 @@ export default function TermsPage() {
             </header>
 
             <p className="text-tl-muted leading-relaxed">
-              Welcome to TwinLens (&quot;the App&quot;), developed by Leo Frht
-              (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;). By downloading, installing,
-              or using the App, you agree to be bound by these Terms of Use.
+              Welcome to MyTwinLens (&quot;the App&quot;), developed and operated by
+              MyElleLab (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;). By downloading,
+              installing, or using the App, you agree to be bound by these Terms of Use,
+              which form an agreement between you and MyElleLab.
             </p>
 
             <Section title="Acceptance of Terms">
               <p className="text-tl-muted leading-relaxed">
-                By accessing or using TwinLens, you agree to be bound by these Terms
+                By accessing or using MyTwinLens, you agree to be bound by these Terms
                 of Use and our{" "}
                 <Link href="/privacy" className="text-tl-amber hover:underline">
                   Privacy Policy
@@ -46,7 +47,7 @@ export default function TermsPage() {
 
             <Section title="Description of Service">
               <p className="text-tl-muted leading-relaxed">
-                TwinLens is a remote camera application for iOS that connects two
+                MyTwinLens is a remote camera application for iOS that connects two
                 iPhones over a local network &mdash; one as a camera (Lens) and one as
                 a live viewfinder with remote shutter (Mirror). All communication
                 occurs over local Wi-Fi and Bluetooth using Apple&apos;s Multipeer
@@ -56,7 +57,7 @@ export default function TermsPage() {
 
             <Section title="Subscriptions and Payments">
               <p className="text-tl-muted leading-relaxed">
-                TwinLens offers optional Pro subscriptions with monthly and yearly
+                MyTwinLens offers optional Pro subscriptions with monthly and yearly
                 plans. By subscribing, you agree to the following:
               </p>
               <ul className="mt-3 space-y-2 text-tl-muted">
@@ -101,7 +102,7 @@ export default function TermsPage() {
 
             <Section title="Device Compatibility">
               <p className="text-tl-muted leading-relaxed">
-                TwinLens requires two iOS devices with camera and local network
+                MyTwinLens requires two iOS devices with camera and local network
                 capability. Connection quality depends on local network conditions,
                 distance between devices, and potential obstacles. We do not guarantee
                 uninterrupted or error-free connections.
@@ -110,7 +111,7 @@ export default function TermsPage() {
 
             <Section title="User Responsibilities">
               <p className="text-tl-muted leading-relaxed">
-                When using TwinLens, you agree to:
+                When using MyTwinLens, you agree to:
               </p>
               <ul className="mt-3 space-y-2 text-tl-muted">
                 <ListItem>Use the App only for lawful purposes</ListItem>
@@ -133,8 +134,8 @@ export default function TermsPage() {
 
             <Section title="Intellectual Property">
               <p className="text-tl-muted leading-relaxed">
-                All content, design, code, and visual assets of TwinLens are the
-                intellectual property of Leo Frht. You are granted a limited,
+                All content, design, code, and visual assets of MyTwinLens are the
+                intellectual property of MyElleLab. You are granted a limited,
                 non-exclusive, non-transferable, revocable license to use the App for
                 personal, non-commercial purposes in accordance with these Terms.
               </p>
@@ -142,7 +143,7 @@ export default function TermsPage() {
 
             <Section title="Data and Privacy">
               <p className="text-tl-muted leading-relaxed">
-                TwinLens does not collect personal data. All data stays on your
+                MyElleLab does not collect personal data through MyTwinLens. All data stays on your
                 devices. Photos are saved to your Camera Roll, not to any cloud
                 service. For full details, see our{" "}
                 <Link href="/privacy" className="text-tl-amber hover:underline">
@@ -165,7 +166,7 @@ export default function TermsPage() {
 
             <Section title="Limitation of Liability">
               <p className="text-tl-muted leading-relaxed">
-                To the maximum extent permitted by applicable law, Leo Frht shall not
+                To the maximum extent permitted by applicable law, MyElleLab shall not
                 be liable for any indirect, incidental, special, consequential, or
                 punitive damages arising from or related to your use of or inability to
                 use the App, including but not limited to device damage, photo loss, or
@@ -203,10 +204,10 @@ export default function TermsPage() {
               <p className="text-tl-muted leading-relaxed">
                 For questions about these Terms:{" "}
                 <a
-                  href="mailto:support@twinlensapp.com"
+                  href="mailto:support@myellelab.com"
                   className="text-tl-amber hover:underline"
                 >
-                  support@twinlensapp.com
+                  support@myellelab.com
                 </a>
               </p>
             </Section>

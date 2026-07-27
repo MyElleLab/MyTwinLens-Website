@@ -4,9 +4,9 @@ import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — TwinLens",
+  title: "Privacy Policy — MyTwinLens",
   description:
-    "TwinLens collects zero data. Everything stays on your devices. Read our full privacy policy.",
+    "MyTwinLens collects zero data. Everything stays on your devices. Read our full privacy policy.",
 };
 
 export default function PrivacyPage() {
@@ -29,16 +29,17 @@ export default function PrivacyPage() {
             </header>
 
             <p className="text-tl-muted leading-relaxed">
-              TwinLens (&quot;the App&quot;) is developed by Leo Frht (&quot;we&quot;,
-              &quot;us&quot;, &quot;our&quot;). This Privacy Policy explains how we handle
-              your information when you use the App.
+              MyTwinLens (&quot;the App&quot;) is developed and operated by MyElleLab
+              (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;), the data controller for
+              the App. This Privacy Policy explains how we handle your information when
+              you use the App.
             </p>
 
             <Section title="The Short Version">
               <div className="p-4 rounded-xl border border-tl-amber-dim bg-tl-amber-glow">
                 <p className="font-semibold text-tl-amber">
-                  TwinLens does not collect, store, or transmit any personal data.
-                  Everything stays on your devices.
+                  MyElleLab, the developer of MyTwinLens, does not collect, store, or
+                  transmit any personal data. Everything stays on your devices.
                 </p>
               </div>
               <p className="text-tl-muted leading-relaxed">
@@ -49,7 +50,8 @@ export default function PrivacyPage() {
 
             <Section title="No Data Collection">
               <p className="text-tl-muted leading-relaxed">
-                TwinLens does not collect any personal data. Specifically:
+                MyElleLab does not collect any personal data through MyTwinLens.
+                Specifically:
               </p>
               <ul className="mt-3 space-y-2 text-tl-muted">
                 <ListItem>No analytics or usage tracking</ListItem>
@@ -63,7 +65,7 @@ export default function PrivacyPage() {
 
             <Section title="No Internet Required">
               <p className="text-tl-muted leading-relaxed">
-                TwinLens does not require an internet connection to function. All
+                MyTwinLens does not require an internet connection to function. All
                 communication between devices happens over local Wi-Fi and Bluetooth
                 using Apple&apos;s Multipeer Connectivity framework. No data leaves your
                 local network.
@@ -72,7 +74,7 @@ export default function PrivacyPage() {
 
             <Section title="Photos">
               <p className="text-tl-muted leading-relaxed">
-                Photos captured with TwinLens are saved directly to your device&apos;s
+                Photos captured with MyTwinLens are saved directly to your device&apos;s
                 local photo library. They are never uploaded, transmitted to any server,
                 or stored by the App outside of your Camera Roll.
               </p>
@@ -80,7 +82,7 @@ export default function PrivacyPage() {
 
             <Section title="Device Permissions">
               <p className="text-tl-muted leading-relaxed">
-                TwinLens requests the following permissions, each used solely for its
+                MyTwinLens requests the following permissions, each used solely for its
                 stated purpose:
               </p>
               <ul className="mt-3 space-y-2 text-tl-muted">
@@ -101,7 +103,7 @@ export default function PrivacyPage() {
 
             <Section title="RevenueCat (Subscription Management)">
               <p className="text-tl-muted leading-relaxed">
-                TwinLens uses RevenueCat to manage optional Pro subscriptions.
+                MyTwinLens uses RevenueCat to manage optional Pro subscriptions.
                 RevenueCat processes subscription purchase data provided by Apple to
                 validate and manage your subscription status. This is the only
                 third-party SDK integrated in the App.
@@ -127,7 +129,7 @@ export default function PrivacyPage() {
 
             <Section title="Network Communication">
               <p className="text-tl-muted leading-relaxed">
-                TwinLens connects two iPhones directly over Wi-Fi and Bluetooth
+                MyTwinLens connects two iPhones directly over Wi-Fi and Bluetooth
                 using Apple&apos;s Multipeer Connectivity framework. The live video
                 stream and photo data travel directly between your two devices.
                 No data passes through any external server.
@@ -156,7 +158,8 @@ export default function PrivacyPage() {
 
             <Section title="Children's Privacy">
               <p className="text-tl-muted leading-relaxed">
-                TwinLens does not knowingly collect data from children under 16.
+                MyElleLab does not knowingly collect data from children under 16
+                through MyTwinLens.
                 Since no personal information is collected from any user, the
                 App is compliant with COPPA and GDPR age requirements.
               </p>
@@ -173,10 +176,10 @@ export default function PrivacyPage() {
               <p className="text-tl-muted leading-relaxed">
                 For privacy questions or concerns:{" "}
                 <a
-                  href="mailto:support@twinlensapp.com"
+                  href="mailto:support@myellelab.com"
                   className="text-tl-amber hover:underline"
                 >
-                  support@twinlensapp.com
+                  support@myellelab.com
                 </a>
               </p>
             </Section>

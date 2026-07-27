@@ -9,7 +9,7 @@ const steps = [
     number: "02",
     title: "Open Your Mirror",
     description:
-      "Open TwinLens on your second iPhone. The two phones pair directly over Wi-Fi and Bluetooth — no internet needed.",
+      "Open MyTwinLens on your second iPhone. The two phones pair directly over Wi-Fi and Bluetooth — no internet needed.",
   },
   {
     number: "03",

@@ -29,7 +29,7 @@ export default function HeroSection() {
           <a
             href="https://apps.apple.com/app/id6762047518"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-tl-amber text-tl-bg font-semibold text-sm hover:bg-[#D97706] transition-colors"
-            aria-label="Download TwinLens on the App Store"
+            aria-label="Download MyTwinLens on the App Store"
           >
             <AppleIcon />
             Download on the App Store
@@ -47,7 +47,7 @@ export default function HeroSection() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/Hero_v2.png"
-            alt="TwinLens — one iPhone as the Lens, one as the Mirror, capturing the same shot"
+            alt="MyTwinLens — one iPhone as the Lens, one as the Mirror, capturing the same shot"
             className="mx-auto w-full h-auto rounded-2xl border border-tl-border shadow-[0_8px_40px_rgba(245,158,11,0.08)]"
           />
           <p className="mt-4 text-xs text-tl-muted mono-heading tracking-widest">

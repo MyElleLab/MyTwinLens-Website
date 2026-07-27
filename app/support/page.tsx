@@ -4,16 +4,16 @@ import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Support — TwinLens",
+  title: "Support — MyTwinLens",
   description:
-    "Get help with TwinLens. Email support and read answers to common questions about connecting your iPhones, shooting offline, and managing your subscription.",
+    "Get help with MyTwinLens. Email support and read answers to common questions about connecting your iPhones, shooting offline, and managing your subscription.",
 };
 
 const faqs = [
   {
     question: "How do I connect my two iPhones?",
     answer:
-      "Open TwinLens on both phones. Choose Lens on the one you'll place at a distance and Mirror on the one you'll hold. On the Mirror, scan the QR code shown on the Lens or enter its 4 character code. Keep both phones nearby and unlocked; the connection can take a few seconds.",
+      "Open MyTwinLens on both phones. Choose Lens on the one you'll place at a distance and Mirror on the one you'll hold. On the Mirror, scan the QR code shown on the Lens or enter its 4 character code. Keep both phones nearby and unlocked; the connection can take a few seconds.",
   },
   {
     question: "Do I need internet or WiFi to shoot?",
@@ -23,17 +23,17 @@ const faqs = [
   {
     question: "My phones won't connect. What should I check?",
     answer:
-      "Make sure both phones have Bluetooth on and have granted TwinLens the Local Network and Camera permissions in Settings. Keep the phones close together and unlocked, then try again; the first connection can take up to about 10 seconds.",
+      "Make sure both phones have Bluetooth on and have granted MyTwinLens the Local Network and Camera permissions in Settings. Keep the phones close together and unlocked, then try again; the first connection can take up to about 10 seconds.",
   },
   {
     question: "How do I manage or cancel my subscription?",
     answer:
-      "Subscriptions are handled by Apple. On your iPhone, open Settings, tap your name at the top, then Subscriptions, and select TwinLens. You can also use Restore Purchases inside the app if a previous subscription isn't showing.",
+      "Subscriptions are handled by Apple. On your iPhone, open Settings, tap your name at the top, then Subscriptions, and select MyTwinLens. You can also use Restore Purchases inside the app if a previous subscription isn't showing.",
   },
   {
     question: "Which devices are supported?",
     answer:
-      "TwinLens runs on iPhone. You need two iPhones, one as the Lens and one as the Mirror.",
+      "MyTwinLens runs on iPhone. You need two iPhones, one as the Lens and one as the Mirror.",
   },
 ];
 
@@ -56,17 +56,17 @@ export default function SupportPage() {
                 Support
               </h1>
               <p className="text-tl-muted leading-relaxed">
-                Need help with TwinLens? Email us and we&apos;ll get back to you.
+                Need help with MyTwinLens? Email us and we&apos;ll get back to you.
               </p>
             </header>
 
             {/* Contact block */}
             <div className="p-6 rounded-xl bg-tl-surface border border-tl-border space-y-4">
               <a
-                href="mailto:support@twinlensapp.com"
+                href="mailto:support@myellelab.com"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-tl-amber text-tl-bg font-semibold text-sm hover:bg-[#D97706] transition-colors"
               >
-                support@twinlensapp.com
+                support@myellelab.com
               </a>
               <p className="text-sm text-tl-muted">
                 We typically respond within 1 to 2 business days.
