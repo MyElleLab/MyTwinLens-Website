@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/terms" },
   title: "Terms of Use — MyTwinLens",
   description: "Terms of Use for the MyTwinLens iOS app.",
 };
@@ -24,14 +25,20 @@ export default function TermsPage() {
           <article className="space-y-8">
             <header className="space-y-2">
               <h1 className="text-4xl font-bold text-tl-text">Terms of Use</h1>
-              <p className="text-sm text-tl-muted">Last updated: April 2026</p>
+              <p className="text-sm text-tl-muted">Last updated: July 2026</p>
             </header>
 
             <p className="text-tl-muted leading-relaxed">
-              Welcome to MyTwinLens (&quot;the App&quot;), developed and operated by
-              MyElleLab (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;). By downloading,
-              installing, or using the App, you agree to be bound by these Terms of Use,
-              which form an agreement between you and MyElleLab.
+              MyTwinLens is operated by Leonardo Ferhati, trading as MyElleLab
+              (&quot;we&quot;, &quot;us&quot;). You can contact us at{" "}
+              <a
+                href="mailto:support@myellelab.com"
+                className="text-tl-amber hover:underline"
+              >
+                support@myellelab.com
+              </a>
+              . By downloading, installing, or using MyTwinLens (&quot;the App&quot;),
+              you agree to be bound by these Terms of Use.
             </p>
 
             <Section title="Acceptance of Terms">
@@ -57,8 +64,10 @@ export default function TermsPage() {
 
             <Section title="Subscriptions and Payments">
               <p className="text-tl-muted leading-relaxed">
-                MyTwinLens offers optional Pro subscriptions with monthly and yearly
-                plans. By subscribing, you agree to the following:
+                MyTwinLens is sold as an auto-renewing subscription, billed through your
+                Apple ID at 4.99 USD per month or 39.99 USD per year. Local prices are
+                set by Apple for your region and shown at checkout. By subscribing, you
+                agree to the following:
               </p>
               <ul className="mt-3 space-y-2 text-tl-muted">
                 <ListItem>
@@ -69,7 +78,7 @@ export default function TermsPage() {
                   before the end of the current billing period
                 </ListItem>
                 <ListItem>
-                  Your account will be charged for renewal within 24 hours prior to the
+                  Your Apple ID will be charged for renewal within 24 hours prior to the
                   end of the current period at the same price
                 </ListItem>
                 <ListItem>
@@ -77,10 +86,6 @@ export default function TermsPage() {
                   <strong className="text-tl-text">
                     iPhone Settings &rarr; Apple ID &rarr; Subscriptions
                   </strong>
-                </ListItem>
-                <ListItem>
-                  If a free trial is offered, any unused portion of the trial is
-                  forfeited when you purchase a subscription
                 </ListItem>
                 <ListItem>
                   Prices may vary by region and are displayed in the App before purchase
@@ -189,6 +194,12 @@ export default function TermsPage() {
                 laws of Denmark, without regard to conflict of law principles. Any
                 disputes arising under these Terms shall be subject to the exclusive
                 jurisdiction of the courts of Denmark.
+              </p>
+              <p className="mt-3 text-tl-muted leading-relaxed">
+                If you are a consumer resident in the European Union or the European
+                Economic Area, nothing in this section deprives you of the protection
+                of the mandatory consumer law of the country in which you live, and you
+                keep the right to bring proceedings in the courts of that country.
               </p>
             </Section>
 

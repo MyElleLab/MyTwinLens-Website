@@ -4,3 +4,6 @@ out/
 .DS_Store
 *.tsbuildinfo
 .vercel
+
+# Collaborator source for the landing page (split into app/home.html, app/home.css, public/site.js)
+TwinLens-Website.html

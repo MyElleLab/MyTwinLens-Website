@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/support" },
   title: "Support — MyTwinLens",
   description:
     "Get help with MyTwinLens. Email support and read answers to common questions about connecting your iPhones, shooting offline, and managing your subscription.",
@@ -56,7 +57,15 @@ export default function SupportPage() {
                 Support
               </h1>
               <p className="text-tl-muted leading-relaxed">
-                Need help with MyTwinLens? Email us and we&apos;ll get back to you.
+                MyTwinLens is operated by Leonardo Ferhati, trading as MyElleLab
+                (&quot;we&quot;, &quot;us&quot;). You can contact us at{" "}
+                <a
+                  href="mailto:support@myellelab.com"
+                  className="text-tl-amber hover:underline"
+                >
+                  support@myellelab.com
+                </a>
+                .
               </p>
             </header>
 

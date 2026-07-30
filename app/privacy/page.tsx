@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/privacy" },
   title: "Privacy Policy — MyTwinLens",
   description:
     "MyTwinLens collects zero data. Everything stays on your devices. Read our full privacy policy.",
@@ -25,14 +26,21 @@ export default function PrivacyPage() {
           <article className="space-y-8">
             <header className="space-y-2">
               <h1 className="text-4xl font-bold text-tl-text">Privacy Policy</h1>
-              <p className="text-sm text-tl-muted">Last updated: April 2026</p>
+              <p className="text-sm text-tl-muted">Last updated: July 2026</p>
             </header>
 
             <p className="text-tl-muted leading-relaxed">
-              MyTwinLens (&quot;the App&quot;) is developed and operated by MyElleLab
-              (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;), the data controller for
-              the App. This Privacy Policy explains how we handle your information when
-              you use the App.
+              MyTwinLens is operated by Leonardo Ferhati, trading as MyElleLab
+              (&quot;we&quot;, &quot;us&quot;), the data controller for the App. You can
+              contact us at{" "}
+              <a
+                href="mailto:support@myellelab.com"
+                className="text-tl-amber hover:underline"
+              >
+                support@myellelab.com
+              </a>
+              . This Privacy Policy explains how we handle your information when you use
+              MyTwinLens (&quot;the App&quot;).
             </p>
 
             <Section title="The Short Version">
@@ -103,7 +111,7 @@ export default function PrivacyPage() {
 
             <Section title="RevenueCat (Subscription Management)">
               <p className="text-tl-muted leading-relaxed">
-                MyTwinLens uses RevenueCat to manage optional Pro subscriptions.
+                MyTwinLens uses RevenueCat to manage subscriptions.
                 RevenueCat processes subscription purchase data provided by Apple to
                 validate and manage your subscription status. This is the only
                 third-party SDK integrated in the App.

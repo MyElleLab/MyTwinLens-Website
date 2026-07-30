@@ -1,0 +1,416 @@
+<a class="skip" href="#main">Skip to content</a>
+<div id="progress" role="presentation"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#hero" aria-label="MyTwinLens home">
+      <img class="logo" width="26" height="26" alt="" src="data:image/png;base64,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">
+      MYTWIN<b>LENS</b>
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#demo">Live demo</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="btn btn-amber btn-sm cta-store" href="#get">Get MyTwinLens</a></li>
+      </ul>
+    </nav>
+    <button id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<!-- ═══════════ HERO ═══════════ -->
+<section id="hero">
+  <div class="wrap">
+    <p class="hero-pill"><span class="dot" aria-hidden="true"></span> PEER-TO-PEER · ENCRYPTED · NO CLOUD</p>
+    <h1>Two iPhones.<br><em>One camera.</em></h1>
+    <p class="lead">Place one iPhone where the shot is. Hold the other as a live viewfinder with full manual control. Frame, zoom, expose and fire from across the room — nothing ever leaves your hands.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-amber cta-store" href="#get">Get MyTwinLens</a>
+      <a class="btn btn-ghost" href="#demo">Try the live demo
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </div>
+    <div class="hero-meta" role="list">
+      <span role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>~30 FPS LIVE VIEW</span>
+      <span role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>END-TO-END ENCRYPTED</span>
+      <span role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>PAIRS IN SECONDS</span>
+    </div>
+  </div>
+</section>
+
+<hr class="hr">
+
+<!-- ═══════════ LIVE DEMO ═══════════ -->
+<section id="demo" aria-labelledby="demoTitle">
+  <div class="wrap">
+    <p class="kicker rv">Live demo — real app behaviour</p>
+    <h2 id="demoTitle" class="rv">Drive the Lens from the Mirror.<br>Right here.</h2>
+    <p class="lead rv">This is a working replica of MyTwinLens — same mode carousel, same shutter blink, same sync. Everything you touch on the <b style="color:var(--amber)">Mirror</b> happens on the <b>Lens</b>, exactly like on two paired iPhones.</p>
+    <p class="rv" style="margin-top:14px"><span style="background:var(--amber);color:#000;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.16em;border-radius:999px;padding:4px 10px">NEW</span>&nbsp;&nbsp;<span style="color:var(--txt-2);font-size:14px"><b style="color:#fff">Interval burst</b> just landed — swipe the carousel to INTERVAL, or hit the chip below.</span></p>
+
+    <div class="link-line rv" aria-hidden="true">
+      <svg viewBox="0 0 430 46" preserveAspectRatio="none"><path d="M0 23 H430" stroke="rgba(245,158,11,.35)" stroke-width="1" stroke-dasharray="5 7"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.4s" repeatCount="indefinite"/></path></svg>
+      <span class="link-badge"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>ENCRYPTED P2P LINK · 12 MS</span>
+    </div>
+
+    <div class="stage">
+      <!-- LENS -->
+      <div class="phone-col rv">
+        <p class="role-tag"><span class="rd" aria-hidden="true"></span> LENS — placed on the tripod</p>
+        <div class="phone" id="phLens" aria-label="Lens phone: remote camera preview">
+          <div class="screen">
+            <div class="topbar">
+              <span class="statuspill"><span class="sd" aria-hidden="true"></span> <span class="fpsTag">30 FPS · 14 MS</span></span>
+              <span class="chipset">
+                <button class="chip" data-ctl="flash" aria-label="Flash" aria-pressed="false"><i class="gg" data-g="flash15"></i></button>
+                <button class="chip" data-ctl="live" aria-label="Live Photo" aria-pressed="false"><i class="gg" data-g="liveslash15"></i></button>
+                <button class="chip" data-ctl="drawer" aria-label="Tools" aria-expanded="false"><span class="dots6"><i></i><i></i><i></i><i></i><i></i><i></i></span></button>
+              </span>
+            </div>
+            <div class="recpill" aria-hidden="true"><span class="rr"></span><span class="rt">00:00</span></div>
+            <div class="cfgpill" aria-hidden="true">10/3s/<i class="gg" data-g="lockopen25" style="width:10.3px;height:8.7px"></i></div>
+            <div class="toast" role="status" aria-live="polite"></div>
+            <div class="vf" data-tapfocus tabindex="0" role="application" aria-label="Viewfinder">
+              <canvas width="330" height="440" aria-hidden="true"></canvas>
+              <div class="grid" aria-hidden="true"><i style="left:33.3%;top:0;width:.6px;height:100%"></i><i style="left:66.6%;top:0;width:.6px;height:100%"></i><i style="top:33.3%;left:0;height:.6px;width:100%"></i><i style="top:66.6%;left:0;height:.6px;width:100%"></i></div>
+              <div class="reticle" aria-hidden="true"><i style="left:50%;top:0;width:1px;height:7px"></i><i style="left:50%;bottom:0;width:1px;height:7px"></i><i style="top:50%;left:0;height:1px;width:7px"></i><i style="top:50%;right:0;height:1px;width:7px"></i></div>
+              <div class="cd" aria-hidden="true">3</div>
+              <div class="blink" aria-hidden="true"></div>
+            </div>
+            <div class="zoompills" data-live="true"></div>
+            <div class="lower">
+              <div class="shutterrow">
+                <button class="shutter" data-ctl="shutter" aria-label="Shutter"><span class="ring"></span><svg class="ringsvg rs" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36" fill="none" stroke="rgba(255,255,255,.9)" stroke-width="6" stroke-dasharray="1.2 1.5"/></svg><svg class="ringsvg rt" viewBox="0 0 80 80" aria-hidden="true"></svg><span class="core"></span></button>
+              </div>
+              <div class="bottomrow">
+                <button class="gallery" data-ctl="gallery" aria-label="Last capture"><i class="gg dim" data-g="gallery17"></i></button>
+                <div class="carousel" data-live="true" role="tablist" aria-label="Capture mode"><div class="caps"></div><div class="strip"></div></div>
+                <button class="flip" data-ctl="flip" aria-label="Flip camera — available in the app" aria-disabled="true"><i class="gg" data-g="flip18"></i><span class="lk"><i class="gg" data-g="lockfill12" style="width:6.7px;height:7.8px"></i></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MIRROR -->
+      <div class="phone-col rv">
+        <p class="role-tag"><span class="rd" aria-hidden="true"></span> MIRROR — in your hand · touch it</p>
+        <div class="phone" id="phMirror" aria-label="Mirror phone: interactive remote viewfinder. Use the on-screen controls or your keyboard.">
+          <div class="screen">
+            <div class="topbar">
+              <span class="statuspill"><span class="sd" aria-hidden="true"></span> <span class="fpsTag">30 FPS · 12 MS</span></span>
+              <span class="chipset">
+                <button class="chip" data-ctl="flash" aria-label="Flash" aria-pressed="false"><i class="gg" data-g="flash15"></i></button>
+                <button class="chip" data-ctl="live" aria-label="Live Photo" aria-pressed="false"><i class="gg" data-g="liveslash15"></i></button>
+                <button class="chip" data-ctl="drawer" aria-label="Tools" aria-expanded="false"><span class="dots6"><i></i><i></i><i></i><i></i><i></i><i></i></span></button>
+              </span>
+            </div>
+            <div class="recpill" aria-hidden="true"><span class="rr"></span><span class="rt">00:00</span></div>
+            <div class="cfgpill" aria-hidden="true">10/3s/<i class="gg" data-g="lockopen25" style="width:10.3px;height:8.7px"></i></div>
+            <div class="toast" role="status" aria-live="polite"></div>
+            <div class="vf" data-tapfocus tabindex="0" role="application" aria-label="Viewfinder. Click to focus. Arrow up and down adjust zoom.">
+              <canvas width="330" height="440" aria-hidden="true"></canvas>
+              <div class="grid" aria-hidden="true"><i style="left:33.3%;top:0;width:.6px;height:100%"></i><i style="left:66.6%;top:0;width:.6px;height:100%"></i><i style="top:33.3%;left:0;height:.6px;width:100%"></i><i style="top:66.6%;left:0;height:.6px;width:100%"></i></div>
+              <div class="reticle" aria-hidden="true"><i style="left:50%;top:0;width:1px;height:7px"></i><i style="left:50%;bottom:0;width:1px;height:7px"></i><i style="top:50%;left:0;height:1px;width:7px"></i><i style="top:50%;right:0;height:1px;width:7px"></i></div>
+              <div class="cd" aria-hidden="true">3</div>
+              <div class="blink" aria-hidden="true"></div>
+            </div>
+            <div class="zoompills" data-live="true"></div>
+            <div class="lower">
+              <div class="shutterrow">
+                <button class="shutter" data-ctl="shutter" aria-label="Shutter"><span class="ring"></span><svg class="ringsvg rs" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36" fill="none" stroke="rgba(255,255,255,.9)" stroke-width="6" stroke-dasharray="1.2 1.5"/></svg><svg class="ringsvg rt" viewBox="0 0 80 80" aria-hidden="true"></svg><span class="core"></span></button>
+              </div>
+              <div class="bottomrow">
+                <button class="gallery" data-ctl="gallery" aria-label="Last capture"><i class="gg dim" data-g="gallery17"></i></button>
+                <div class="carousel" data-live="true" role="tablist" aria-label="Capture mode"><div class="caps"></div><div class="strip"></div></div>
+                <button class="flip" data-ctl="flip" aria-label="Flip camera — available in the app" aria-disabled="true"><i class="gg" data-g="flip18"></i><span class="lk"><i class="gg" data-g="lockfill12" style="width:6.7px;height:7.8px"></i></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-controls rv" aria-label="Demo shortcuts">
+      <button class="dc" data-demo="zoomin">Zoom in <span class="k">↑</span></button>
+      <button class="dc" data-demo="zoomout">Zoom out <span class="k">↓</span></button>
+      <button class="dc" data-demo="timer">3s timer</button>
+      <button class="dc" data-demo="shoot">Fire the shutter <span class="k">Space</span></button>
+      <button class="dc" data-demo="burst">Interval burst <span class="k" style="border-color:var(--amber-line);color:var(--amber)">NEW</span></button>
+    </div>
+    <p class="demo-note rv">EVERY CONTROL ABOVE IS WIRED — SWIPE THE MODE CAROUSEL, TAP TO FOCUS, SHOOT.</p>
+  </div>
+</section>
+
+<hr class="hr">
+
+<!-- ═══════════ HOW IT WORKS ═══════════ -->
+<section id="how" aria-labelledby="howTitle">
+  <div class="wrap">
+    <p class="kicker rv">How it works</p>
+    <h2 id="howTitle" class="rv">Paired in seconds.<br>No account gymnastics, no cables.</h2>
+    <div class="steps">
+      <article class="step rv">
+        <p class="n">STEP 01</p>
+        <h3>Pick the roles</h3>
+        <p>Open MyTwinLens on both iPhones. One becomes the <b>Lens</b> — the camera you place. The other becomes the <b>Mirror</b> — the viewfinder you hold.</p>
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 220 150" fill="none">
+            <rect x="30" y="20" width="60" height="110" rx="12" stroke="#F59E0B" stroke-width="2"/>
+            <circle cx="60" cy="66" r="17" stroke="#F59E0B" stroke-width="2"/>
+            <circle cx="60" cy="66" r="7" fill="#F59E0B" opacity=".5"/>
+            <text x="60" y="118" fill="#F59E0B" font-family="monospace" font-size="9" text-anchor="middle" letter-spacing="2">LENS</text>
+            <rect x="130" y="20" width="60" height="110" rx="12" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>
+            <rect x="141" y="40" width="38" height="52" rx="4" stroke="#fff" stroke-opacity=".5" stroke-width="1.4"/>
+            <text x="160" y="118" fill="#fff" fill-opacity=".7" font-family="monospace" font-size="9" text-anchor="middle" letter-spacing="2">MIRROR</text>
+          </svg>
+        </div>
+      </article>
+      <article class="step rv">
+        <p class="n">STEP 02</p>
+        <h3>Scan the QR</h3>
+        <p>The Lens shows a pairing code and QR. Scan it with the Mirror — or pick the Lens from the list. The link is direct, encrypted and validated by that code.</p>
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 220 150" fill="none">
+            <rect x="72" y="26" width="76" height="76" rx="10" stroke="#F59E0B" stroke-width="2"/>
+            <g fill="#F59E0B">
+              <rect x="84" y="38" width="16" height="16" rx="2"/><rect x="120" y="38" width="16" height="16" rx="2"/>
+              <rect x="84" y="74" width="16" height="16" rx="2"/><rect x="122" y="76" width="6" height="6"/>
+              <rect x="132" y="86" width="6" height="6"/><rect x="122" y="86" width="6" height="6" opacity=".5"/>
+              <rect x="106" y="60" width="8" height="8" opacity=".7"/>
+            </g>
+            <path d="M40 114h140" stroke="#F59E0B" stroke-width="1.4" stroke-dasharray="4 6"><animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.2s" repeatCount="indefinite"/></path>
+            <text x="110" y="134" fill="#fff" fill-opacity=".55" font-family="monospace" font-size="9" text-anchor="middle" letter-spacing="2">CODE K4TR · ENCRYPTED</text>
+          </svg>
+        </div>
+      </article>
+      <article class="step rv">
+        <p class="n">STEP 03</p>
+        <h3>Shoot together</h3>
+        <p>The Mirror sees what the Lens sees, live. Zoom, focus, exposure, flash, timer, four capture modes — and the shutter fires on both screens at the same instant.</p>
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 220 150" fill="none">
+            <circle cx="110" cy="70" r="34" stroke="#fff" stroke-opacity=".75" stroke-width="3"/>
+            <circle cx="110" cy="70" r="26" fill="#fff">
+              <animate attributeName="r" values="26;22;26" dur="2.6s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="110" cy="70" r="42" stroke="#F59E0B" stroke-width="1.6" opacity=".7">
+              <animate attributeName="r" values="42;48" dur="2.6s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values=".7;0" dur="2.6s" repeatCount="indefinite"/>
+            </circle>
+            <text x="110" y="134" fill="#fff" fill-opacity=".55" font-family="monospace" font-size="9" text-anchor="middle" letter-spacing="2">FIRES ON BOTH SCREENS</text>
+          </svg>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="hr">
+
+<!-- ═══════════ FEATURES ═══════════ -->
+<section id="features" aria-labelledby="featTitle">
+  <div class="wrap">
+    <p class="kicker rv">Features</p>
+    <h2 id="featTitle" class="rv">A real camera app.<br>Split across two phones.</h2>
+    <p class="lead rv">MyTwinLens replicates the native iOS camera — chrome, gestures, feel — then hands the whole thing to the phone in your hand.</p>
+    <div class="fgrid">
+      <article class="fcard rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 3h12M9 3v3.5L4.5 17a3 3 0 0 0 2.8 4h9.4a3 3 0 0 0 2.8-4L15 6.5V3"/></svg></span><h3>Remote everything</h3><p>Zoom, tap-to-focus, exposure, flash, Live Photo, night mode, aspect, timer — every control travels from Mirror to Lens instantly.</p></article>
+      <article class="fcard rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M23 7l-7 4 7 4V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span><h3>True live viewfinder</h3><p>Hardware-encoded H.264 streaming at ~30 fps with on-screen FPS and latency readouts. What you frame is what the Lens shoots.</p></article>
+      <article class="fcard rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.4"/></svg></span><h3>Synchronized shutter</h3><p>One capture event, two screens: the same native shutter blink fires on Lens and Mirror at the same instant. No guessing if it took.</p></article>
+      <article class="fcard rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span><h3>Saved on both devices</h3><p>Photos land in both photo libraries — each phone decides with its own "save to this device" switch. Shoot once, both keep it.</p></article>
+      <article class="fcard rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="3"/><path d="M7 12h.01M12 12h.01M17 12h.01"/></svg></span><h3>Five capture modes</h3><p>Photo, video, slo-mo (120–240 fps), time-lapse and interval bursts (N shots every X seconds, AF locked or auto) — from either phone.</p></article>
+      <article class="fcard rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 20v-8m0 0 3 3m-3-3-3 3"/><circle cx="12" cy="6" r="2.4"/><path d="M5 20a7 7 0 0 1 14 0"/></svg></span><h3>Native-grade controls</h3><p>EV ruler with haptic ticks, focus reticle with sun slider, night mode, 4:3 / 16:9 / 1:1 — measured against the real Camera app, pixel by pixel.</p></article>
+      <article class="fcard rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><h3>Private by design</h3><p>Direct peer-to-peer link over your Wi-Fi or hotspot. Mandatory encryption, pairing-code validation, zero servers, zero cloud, zero footage upload.</p></article>
+      <article class="fcard rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m5 19 5.2-5.2a1.4 1.4 0 0 1 2 0L21 19"/></svg></span><h3>Last capture, always</h3><p>The gallery circle previews your latest shot — photo or video poster frame — and survives relaunches. One tap opens Photos.</p></article>
+    </div>
+  </div>
+</section>
+
+<hr class="hr">
+
+<!-- ═══════════ PRIVACY ═══════════ -->
+<section id="privacy" aria-labelledby="privTitle">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="kicker rv">Privacy</p>
+        <h2 id="privTitle" class="rv">Your footage never<br>meets a server.</h2>
+        <p class="lead rv">Most remote-camera apps route your video through the cloud. MyTwinLens refuses to: the two iPhones talk directly to each other, on your network, encrypted end to end.</p>
+        <ul class="plist">
+          <li class="rv"><span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><div><b>Mandatory encryption</b><span>The session refuses to open unencrypted. Video, commands and previews are all ciphered in transit.</span></div></li>
+          <li class="rv"><span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></span><div><b>Pairing-code validation</b><span>The Lens only accepts a Mirror that presents its code — scanned from the QR or typed. Strangers on the network are rejected.</span></div></li>
+          <li class="rv"><span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M18.36 6.64a9 9 0 1 1-12.72 0"/><path d="M12 2v10"/></svg></span><div><b>Works without internet</b><span>Same Wi-Fi or a Personal Hotspot is enough. On a mountain, in a basement, on a plane — no signal required.</span></div></li>
+          <li class="rv"><span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 3l18 18M10.6 5.1A9 9 0 0 1 21 12a8.96 8.96 0 0 1-1.2 4.5M6.5 6.5A9 9 0 0 0 3 12a9 9 0 0 0 12.5 8.3"/></svg></span><div><b>No tracking, no ads</b><span>No analytics SDKs watching you shoot. There are no accounts and no sign-up — your subscription is handled entirely by Apple.</span></div></li>
+        </ul>
+      </div>
+      <div class="pdiagram rv" aria-hidden="true">
+        <svg viewBox="0 0 380 300" fill="none" style="max-width:380px">
+          <rect x="30" y="70" width="92" height="164" rx="16" stroke="#F59E0B" stroke-width="2"/>
+          <circle cx="76" cy="140" r="24" stroke="#F59E0B" stroke-width="2"/>
+          <circle cx="76" cy="140" r="10" fill="#F59E0B" opacity=".45"/>
+          <text x="76" y="216" fill="#F59E0B" font-family="monospace" font-size="10" text-anchor="middle" letter-spacing="3">LENS</text>
+          <rect x="258" y="70" width="92" height="164" rx="16" stroke="#fff" stroke-opacity=".75" stroke-width="2"/>
+          <rect x="274" y="100" width="60" height="80" rx="6" stroke="#fff" stroke-opacity=".5" stroke-width="1.5"/>
+          <text x="304" y="216" fill="#fff" fill-opacity=".7" font-family="monospace" font-size="10" text-anchor="middle" letter-spacing="3">MIRROR</text>
+          <path d="M122 152 H258" stroke="#F59E0B" stroke-width="1.6" stroke-dasharray="5 7"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.3s" repeatCount="indefinite"/></path>
+          <rect x="164" y="128" width="52" height="48" rx="10" fill="#000" stroke="#F59E0B" stroke-width="1.6"/>
+          <rect x="177" y="148" width="26" height="20" rx="4" stroke="#F59E0B" stroke-width="1.8"/>
+          <path d="M181 148v-5a9 9 0 0 1 18 0v5" stroke="#F59E0B" stroke-width="1.8" transform="scale(.72) translate(66 62)"/>
+          <text x="190" y="262" fill="#fff" fill-opacity=".45" font-family="monospace" font-size="10" text-anchor="middle" letter-spacing="2">NO SERVER IN THE MIDDLE — EVER</text>
+          <g stroke="#fff" stroke-opacity=".14" stroke-width="1.4">
+            <path d="M170 30 h40 M190 10 v40"/>
+          </g>
+          <path d="M150 40 l80 0" stroke="#ef4444" stroke-opacity=".55" stroke-width="1.6" transform="rotate(45 190 40)"/>
+          <text x="190" y="56" fill="#fff" fill-opacity=".3" font-family="monospace" font-size="8.5" text-anchor="middle" letter-spacing="2">CLOUD</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="hr">
+
+<!-- ═══════════ USE CASES ═══════════ -->
+<section id="cases" aria-labelledby="casesTitle">
+  <div class="wrap">
+    <p class="kicker rv">Made for</p>
+    <h2 id="casesTitle" class="rv">Every shot you couldn't take<br>from behind the camera.</h2>
+    <div class="cases">
+      <article class="case rv"><p class="tag">CREATORS</p><h3>Solo shoots</h3><p>Film yourself and nail the framing live — no more run-check-run. See exactly what the camera sees while you're in front of it.</p></article>
+      <article class="case rv"><p class="tag">EVERYONE</p><h3>Group photos</h3><p>Put the Lens on a ledge, get in the picture, watch the frame from your hand and fire when everyone actually smiles.</p></article>
+      <article class="case rv"><p class="tag">PATIENCE</p><h3>Wildlife &amp; street</h3><p>Leave the Lens at the feeder or the corner. Watch from cover, zoom quietly, shoot the exact moment — without spooking the subject.</p></article>
+      <article class="case rv"><p class="tag">PRECISION</p><h3>Product &amp; overhead</h3><p>Rig the Lens on a tripod or overhead mount. Adjust exposure and focus from your chair, not from a ladder.</p></article>
+    </div>
+  </div>
+</section>
+
+<hr class="hr">
+
+<!-- ═══════════ PRICING ═══════════ -->
+<section id="pricing" aria-labelledby="priceTitle">
+  <div class="wrap">
+    <p class="kicker rv">Pricing</p>
+    <h2 id="priceTitle" class="rv">Every tool unlocked.<br>One subscription.</h2>
+    <p class="lead rv">Pick a plan — billed by Apple, cancel anytime in Settings.</p>
+    <div class="pgrid">
+      <article class="plan rv" aria-label="Monthly plan">
+        <p class="pname">Monthly</p>
+        <p class="price"><b>$4.99</b><span>/ month</span></p>
+        <p class="sub">Billed monthly by Apple</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>Full remote control suite</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>Live H.264 viewfinder, ~30 fps</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>Photo · Video · Slo-mo · Time-lapse · Interval</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>Captures saved on both phones</li>
+        </ul>
+        <a class="btn btn-ghost cta-store" href="#get" style="width:100%">Get MyTwinLens</a>
+      </article>
+      <article class="plan best rv" aria-label="Yearly plan, best value">
+        <p class="save">SAVE 33%</p>
+        <p class="pname">Yearly</p>
+        <p class="price"><b>$39.99</b><span>/ year · ≈ $3.33 / month</span></p>
+        <p class="sub">Billed yearly by Apple</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>Everything in monthly</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>Four months' worth of savings</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>Every future feature, no upsells</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>Priority feedback channel</li>
+        </ul>
+        <a class="btn btn-amber cta-store" href="#get" style="width:100%">Get MyTwinLens</a>
+      </article>
+    </div>
+    <p class="pnote rv">Prices in USD; your local price is set at App Store checkout for your region. Subscriptions are managed and billed by Apple; cancel anytime in iOS Settings. See the <a href="/terms/" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Terms</a>.</p>
+  </div>
+</section>
+
+<hr class="hr">
+
+<!-- ═══════════ FAQ ═══════════ -->
+<section id="faq" aria-labelledby="faqTitle">
+  <div class="wrap">
+    <p class="kicker rv">FAQ</p>
+    <h2 id="faqTitle" class="rv">Fair questions,<br>straight answers.</h2>
+    <div class="faq">
+      <details class="qa rv"><summary>Do I really need two iPhones?<span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 5v14M5 12h14"/></svg></span></summary><p class="a">Yes — that's the whole idea. One iPhone is the camera (Lens), the other is your viewfinder and remote (Mirror). Any pair works: yours and a family member's, your current one and your old one in a drawer.</p></details>
+      <details class="qa rv"><summary>Does it work without internet?<span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 5v14M5 12h14"/></svg></span></summary><p class="a">Yes. The phones connect directly over a shared Wi-Fi network or a Personal Hotspot between them — no internet connection, no SIM, no servers involved. The stream never leaves that link.</p></details>
+      <details class="qa rv"><summary>How fast is the live view?<span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 5v14M5 12h14"/></svg></span></summary><p class="a">The viewfinder streams hardware-encoded H.264 at roughly 30 frames per second, with live FPS and round-trip latency shown on screen. On a normal home network the delay sits well under a tenth of a second.</p></details>
+      <details class="qa rv"><summary>Where do my photos and videos go?<span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 5v14M5 12h14"/></svg></span></summary><p class="a">Straight into the iOS photo library. Photos are saved on both iPhones — each device has its own "save to this device" switch, so each phone mirrors its own gallery. Videos are recorded and saved on the Lens.</p></details>
+      <details class="qa rv"><summary>What about the photo quality?<span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 5v14M5 12h14"/></svg></span></summary><p class="a">Captures are taken by the Lens at full native sensor quality (HEVC, maximum photo dimensions, quality prioritization) — the live stream is only the preview. What lands in your library is a real iPhone photo, not a video frame.</p></details>
+      <details class="qa rv"><summary>Can someone else on the network watch my stream?<span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 5v14M5 12h14"/></svg></span></summary><p class="a">No. The session is encrypted end to end and the Lens only accepts a Mirror that presents the correct pairing code — scanned from the QR on the Lens screen or entered manually. Unknown invitations are rejected.</p></details>
+      <details class="qa rv"><summary>Which iOS version do I need?<span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 5v14M5 12h14"/></svg></span></summary><p class="a">MyTwinLens targets modern iOS (17 and up) and adopts the latest camera and glass-material APIs where available — on iOS 26 you get the full native look and feel.</p></details>
+      <details class="qa rv"><summary>How do I cancel?<span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 5v14M5 12h14"/></svg></span></summary><p class="a">Subscriptions are handled entirely by Apple: Settings → your name → Subscriptions → MyTwinLens → Cancel. There is no account to delete — MyTwinLens never creates one, and refunds are handled by Apple under their refund policy.</p></details>
+    </div>
+  </div>
+</section>
+
+<hr class="hr">
+
+<!-- ═══════════ GET ═══════════ -->
+<section id="get" aria-labelledby="getTitle">
+  <div class="wrap">
+    <div class="card rv">
+      <img alt="MyTwinLens app icon" width="96" height="96" style="margin:0 auto 20px;border-radius:22px;box-shadow:0 14px 44px rgba(245,158,11,.28),0 0 0 1px rgba(255,255,255,.1)" src="data:image/jpeg;base64,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">
+      <p class="kicker" style="justify-content:center">Get MyTwinLens</p>
+      <h2 id="getTitle">Your second iPhone is<br>about to earn its keep.</h2>
+      <p class="lead" style="margin:16px auto 0">MyTwinLens 1.1.0 is live on the App Store.</p>
+      <div id="storeSlot">
+        <a class="store-badge" href="https://apps.apple.com/app/id6762047518" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.54c-.03-2.89 2.36-4.27 2.47-4.34-1.35-1.97-3.44-2.24-4.18-2.27-1.78-.18-3.47 1.05-4.37 1.05-.9 0-2.29-1.02-3.77-1-1.94.03-3.73 1.13-4.72 2.86-2.02 3.5-.52 8.68 1.45 11.52.96 1.39 2.1 2.95 3.6 2.9 1.45-.06 2-.94 3.75-.94s2.24.94 3.77.9c1.56-.02 2.55-1.41 3.5-2.81 1.1-1.61 1.56-3.17 1.58-3.25-.03-.02-3.04-1.17-3.08-4.62zM14.16 4.06c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.74-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.63z"/></svg>
+          <span class="t"><i>Download on the</i><b>App Store</b></span>
+        </a>
+        <p class="form-msg" role="status">Requires two iPhones on iOS 17 or later.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid2">
+      <div class="fcol">
+        <a class="brand" href="#hero" aria-label="MyTwinLens home">
+          <img class="logo" width="24" height="24" alt="" src="data:image/png;base64,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">
+          MYTWIN<b>LENS</b>
+        </a>
+        <p>Remote lens · live mirror. A camera app split across two iPhones — peer-to-peer, encrypted, no cloud.</p>
+      </div>
+      <div class="fcol">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#demo">Live demo</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Trust</h4>
+        <ul>
+          <li><a href="#privacy">Privacy by design</a></li>
+          <li><a href="/privacy/">Privacy policy</a></li>
+          <li><a href="/terms/">Terms of use</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Contact</h4>
+        <ul>
+          <li><a id="mailLink" href="mailto:support@myellelab.com">support@myellelab.com</a></li>
+          <li><a href="/support/">Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legalrow">
+      <span>© 2026 MyElleLab</span>
+      <span>MADE FOR TWO IPHONES · NO SERVERS WERE INVOLVED</span>
+    </div>
+  </div>
+</footer>
