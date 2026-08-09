@@ -23,22 +23,6 @@ const jsonLd = {
   url: "https://mytwinlens.myellelab.com",
   description:
     "Pair two iPhones over an encrypted peer-to-peer link: one becomes a remote camera (Lens), the other a live viewfinder with full manual control (Mirror).",
-  offers: [
-    {
-      "@type": "Offer",
-      price: "4.99",
-      priceCurrency: "USD",
-      category: "subscription",
-      name: "MyTwinLens Premium — monthly",
-    },
-    {
-      "@type": "Offer",
-      price: "39.99",
-      priceCurrency: "USD",
-      category: "subscription",
-      name: "MyTwinLens Premium — yearly",
-    },
-  ],
 };
 
 export default function Home() {

@@ -25,7 +25,7 @@ export default function TermsPage() {
           <article className="space-y-8">
             <header className="space-y-2">
               <h1 className="text-4xl font-bold text-tl-text">Terms of Use</h1>
-              <p className="text-sm text-tl-muted">Last updated: 30 July 2026</p>
+              <p className="text-sm text-tl-muted">Last updated: 9 August 2026</p>
             </header>
 
             <p className="text-tl-muted leading-relaxed">
@@ -65,10 +65,10 @@ export default function TermsPage() {
             <Section title="Subscriptions and Payments">
               <p className="text-tl-muted leading-relaxed">
                 MyTwinLens is sold as an auto-renewing subscription that begins with a
-                7 day free trial on both plans. After the trial, the subscription is
-                billed through your Apple Account at 4.99 USD per month or 39.99 USD
-                per year (Save 33%). Local prices are set by Apple for your region and
-                shown at checkout. By subscribing, you agree to the following:
+                7 day free trial on both the monthly and the yearly plan. After the
+                trial, the subscription is billed through your Apple Account. Prices are
+                set by Apple for your region, shown in your local currency, and
+                displayed before purchase. By subscribing, you agree to the following:
               </p>
               <ul className="mt-3 space-y-2 text-tl-muted">
                 <ListItem>
@@ -93,7 +93,8 @@ export default function TermsPage() {
                   <strong className="text-tl-text">Apple Account settings</strong>
                 </ListItem>
                 <ListItem>
-                  Prices may vary by region and are displayed in the App before purchase
+                  Prices vary by region, are shown in your local currency, and are
+                  displayed on the App Store and in the App before purchase
                 </ListItem>
               </ul>
               <p className="mt-3 text-tl-muted leading-relaxed">
