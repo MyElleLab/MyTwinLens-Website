@@ -25,7 +25,7 @@ export default function TermsPage() {
           <article className="space-y-8">
             <header className="space-y-2">
               <h1 className="text-4xl font-bold text-tl-text">Terms of Use</h1>
-              <p className="text-sm text-tl-muted">Last updated: July 2026</p>
+              <p className="text-sm text-tl-muted">Last updated: 9 August 2026</p>
             </header>
 
             <p className="text-tl-muted leading-relaxed">
@@ -64,31 +64,37 @@ export default function TermsPage() {
 
             <Section title="Subscriptions and Payments">
               <p className="text-tl-muted leading-relaxed">
-                MyTwinLens is sold as an auto-renewing subscription, billed through your
-                Apple ID at 4.99 USD per month or 39.99 USD per year. Local prices are
-                set by Apple for your region and shown at checkout. By subscribing, you
-                agree to the following:
+                MyTwinLens is sold as an auto-renewing subscription that begins with a
+                7 day free trial on both the monthly and the yearly plan. After the
+                trial, the subscription is billed through your Apple Account. Prices are
+                set by Apple for your region, shown in your local currency, and
+                displayed before purchase. By subscribing, you agree to the following:
               </p>
               <ul className="mt-3 space-y-2 text-tl-muted">
                 <ListItem>
-                  Payment is charged to your Apple ID account at confirmation of purchase
+                  The 7 day free trial is available to customers who have not previously
+                  subscribed
                 </ListItem>
                 <ListItem>
-                  Subscriptions automatically renew unless cancelled at least 24 hours
-                  before the end of the current billing period
+                  Payment is charged at the end of the free trial unless you cancel at
+                  least 24 hours before the trial ends
                 </ListItem>
                 <ListItem>
-                  Your Apple ID will be charged for renewal within 24 hours prior to the
-                  end of the current period at the same price
+                  The subscription then renews automatically unless cancelled at least
+                  24 hours before the end of the current period
                 </ListItem>
                 <ListItem>
-                  You can manage or cancel subscriptions in{" "}
-                  <strong className="text-tl-text">
-                    iPhone Settings &rarr; Apple ID &rarr; Subscriptions
-                  </strong>
+                  Your Apple Account will be charged for renewal within 24 hours prior
+                  to the end of the current period at the same price
                 </ListItem>
                 <ListItem>
-                  Prices may vary by region and are displayed in the App before purchase
+                  Billing is handled by Apple. You can manage or cancel your
+                  subscription in{" "}
+                  <strong className="text-tl-text">Apple Account settings</strong>
+                </ListItem>
+                <ListItem>
+                  Prices vary by region, are shown in your local currency, and are
+                  displayed on the App Store and in the App before purchase
                 </ListItem>
               </ul>
               <p className="mt-3 text-tl-muted leading-relaxed">
