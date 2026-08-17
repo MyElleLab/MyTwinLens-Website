@@ -25,7 +25,7 @@ export default function TermsPage() {
           <article className="space-y-8">
             <header className="space-y-2">
               <h1 className="text-4xl font-bold text-tl-text">Terms of Use</h1>
-              <p className="text-sm text-tl-muted">Last updated: 9 August 2026</p>
+              <p className="text-sm text-tl-muted">Last updated: 16 August 2026</p>
             </header>
 
             <p className="text-tl-muted leading-relaxed">
@@ -64,20 +64,22 @@ export default function TermsPage() {
 
             <Section title="Subscriptions and Payments">
               <p className="text-tl-muted leading-relaxed">
-                MyTwinLens is sold as an auto-renewing subscription that begins with a
-                7 day free trial on both the monthly and the yearly plan. After the
-                trial, the subscription is billed through your Apple Account. Prices are
-                set by Apple for your region, shown in your local currency, and
-                displayed before purchase. By subscribing, you agree to the following:
+                MyTwinLens is sold as an auto-renewing subscription. The yearly plan
+                begins with a 7 day free trial; the monthly plan is billed from the
+                start. After the trial, the subscription is billed through your Apple
+                Account. Prices are set by Apple for your region, shown in your local
+                currency, and displayed before purchase. By subscribing, you agree to
+                the following:
               </p>
               <ul className="mt-3 space-y-2 text-tl-muted">
                 <ListItem>
-                  The 7 day free trial is available to customers who have not previously
-                  subscribed
+                  The 7 day free trial applies to the yearly plan only and is available
+                  to customers who have not previously subscribed
                 </ListItem>
                 <ListItem>
-                  Payment is charged at the end of the free trial unless you cancel at
-                  least 24 hours before the trial ends
+                  On the yearly plan, payment is charged at the end of the free trial
+                  unless you cancel at least 24 hours before the trial ends; the monthly
+                  plan is charged when you subscribe
                 </ListItem>
                 <ListItem>
                   The subscription then renews automatically unless cancelled at least
