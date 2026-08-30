@@ -25,7 +25,7 @@ export default function TermsPage() {
           <article className="space-y-8">
             <header className="space-y-2">
               <h1 className="text-4xl font-bold text-tl-text">Terms of Use</h1>
-              <p className="text-sm text-tl-muted">Last updated: 16 August 2026</p>
+              <p className="text-sm text-tl-muted">Last updated: 29 August 2026</p>
             </header>
 
             <p className="text-tl-muted leading-relaxed">
@@ -156,9 +156,11 @@ export default function TermsPage() {
 
             <Section title="Data and Privacy">
               <p className="text-tl-muted leading-relaxed">
-                MyElleLab does not collect personal data through MyTwinLens. All data stays on your
-                devices. Photos are saved to your Camera Roll, not to any cloud
-                service. For full details, see our{" "}
+                MyElleLab does not collect personal data through MyTwinLens. There is no
+                account to create, and your photos never leave your devices &mdash; they are
+                saved to your Camera Roll, not to any cloud service. The only data involved
+                is anonymous subscription information, handled by Apple and RevenueCat. For
+                full details, see our{" "}
                 <Link href="/privacy" className="text-tl-amber hover:underline">
                   Privacy Policy
                 </Link>
