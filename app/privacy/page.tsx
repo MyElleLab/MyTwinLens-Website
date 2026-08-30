@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/privacy" },
   title: "Privacy Policy — MyTwinLens",
   description:
-    "MyTwinLens collects zero data. Everything stays on your devices. Read our full privacy policy.",
+    "MyTwinLens has no accounts and collects no personal data. Your photos never leave your devices. Read our full privacy policy.",
 };
 
 export default function PrivacyPage() {
@@ -26,7 +26,7 @@ export default function PrivacyPage() {
           <article className="space-y-8">
             <header className="space-y-2">
               <h1 className="text-4xl font-bold text-tl-text">Privacy Policy</h1>
-              <p className="text-sm text-tl-muted">Last updated: July 2026</p>
+              <p className="text-sm text-tl-muted">Last updated: 29 August 2026</p>
             </header>
 
             <p className="text-tl-muted leading-relaxed">
@@ -46,17 +46,22 @@ export default function PrivacyPage() {
             <Section title="The Short Version">
               <div className="p-4 rounded-xl border border-tl-amber-dim bg-tl-amber-glow">
                 <p className="font-semibold text-tl-amber">
-                  MyElleLab, the developer of MyTwinLens, does not collect, store, or
-                  transmit any personal data. Everything stays on your devices.
+                  MyElleLab, the developer of MyTwinLens, collects no personal data. There
+                  is no account to create, and your photos never leave your devices. The
+                  only data involved is anonymous subscription information, handled by
+                  Apple and RevenueCat.
                 </p>
               </div>
               <p className="text-tl-muted leading-relaxed">
-                Our App Store privacy label is{" "}
-                <strong className="text-tl-text">&quot;Data Not Collected&quot;</strong>.
+                Our App Store privacy label declares{" "}
+                <strong className="text-tl-text">Purchases</strong> &mdash; the anonymous
+                subscription data Apple and RevenueCat use to validate your subscription.
+                Nothing else is collected, and none of it is linked to your identity or
+                used to track you.
               </p>
             </Section>
 
-            <Section title="No Data Collection">
+            <Section title="No Personal Data Collection">
               <p className="text-tl-muted leading-relaxed">
                 MyElleLab does not collect any personal data through MyTwinLens.
                 Specifically:

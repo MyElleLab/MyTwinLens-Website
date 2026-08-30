@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "MyTwinLens — Two iPhones. One camera.",
     description:
-      "A remote lens and a live mirror. Shoot from where the camera can't be. Peer-to-peer, encrypted, no servers.",
+      "A remote lens and a live mirror. Shoot from where the camera can't be. Peer-to-peer. No servers. Your photos never leave your devices.",
     url: "https://mytwinlens.myellelab.com",
     siteName: "MyTwinLens",
     type: "website",

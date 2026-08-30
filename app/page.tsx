@@ -22,7 +22,7 @@ const jsonLd = {
   softwareVersion: "1.1.0",
   url: "https://mytwinlens.myellelab.com",
   description:
-    "Pair two iPhones over an encrypted peer-to-peer link: one becomes a remote camera (Lens), the other a live viewfinder with full manual control (Mirror).",
+    "Pair two iPhones over a direct peer-to-peer link: one becomes a remote camera (Lens), the other a live viewfinder with full manual control (Mirror). No servers, and photos never leave your devices.",
 };
 
 export default function Home() {
