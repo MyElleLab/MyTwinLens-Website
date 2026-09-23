@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/app-icon.jpeg",
-        width: 1024,
-        height: 1024,
-        alt: "MyTwinLens app icon",
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "MyTwinLens — You. In the shot. Finally.",
       },
     ],
   },
